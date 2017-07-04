@@ -1,3 +1,22 @@
-body {
-  background-color: antiquewhite;
+$icon-font-path: "~bootstrap-sass/assets/fonts/bootstrap/";
+
+@import "~bootstrap-sass/assets/stylesheets/bootstrap";
+@import "~@cgross/angular-notify/dist/angular-notify.css";
+
+.row + .row {
+  margin-top: 15px;
+}
+
+.shop-cart-totals-container {
+  padding: 0;
+}
+
+shop-cart-totals {
+  .total {
+    display: flex;
+
+    div {
+      width: 50%;
+    }
+  }
 }

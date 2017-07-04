@@ -1,0 +1,9 @@
+<div class="panel panel-primary">
+    <div class="panel-heading">Cart totals:</div>
+    <div class="panel-body">
+        <div class="total" ng-repeat="total in $ctrl.totals track by $index">
+            <div>{{total.title}}:</div>
+            <div>{{total.value | currency}}</div>
+        </div>
+    </div>
+</div>
